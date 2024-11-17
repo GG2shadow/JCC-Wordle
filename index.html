@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle Game</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5 text-center">
+        <h1>Wordle Game</h1>
+        <div id="boardContainer"></div>
+        <button id="guessButton" class="btn btn-primary mt-3">Submit Guess</button>
+        
+        <!-- <button id="viewAllLettersButton" class="btn btn-secondary mt-3">View all letters</button> -->
+    </div>
+
+    <!-- Modal for Winning -->
+    <div class="modal fade" id="winModal" tabindex="-1" aria-labelledby="winModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="winModalLabel">Congratulations!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    You guessed the word correctly! 🎉
+                </div>
+                <div class="modal-footer">
+                    <!-- Button to open the "View all letters" page -->
+                    <button type="button" class="btn btn-secondary" id="viewAllLettersFromModalButton">
+                        View all letters
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Today's Letter -->
+    <div class="modal fade" id="letterModal" tabindex="-1" aria-labelledby="letterModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="letterModalLabel">Today's Letter</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies, est at volutpat malesuada,
+                    lorem nunc convallis massa, nec cursus mi nulla eu lacus. Fusce euismod, orci at elementum fermentum,
+                    sapien turpis dignissim dolor, vitae tempus magna purus non nunc. Aenean lacinia eros id libero
+                    pulvinar efficitur. Vestibulum ut ligula nec odio interdum placerat. Nam vitae leo et orci fermentum
+                    lacinia vel eu metus. Nulla facilisi. Donec egestas sapien a malesuada vulputate. Suspendisse viverra
+                    vehicula libero vel faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada
+                    fames ac turpis egestas. Curabitur vehicula posuere risus non fermentum.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
