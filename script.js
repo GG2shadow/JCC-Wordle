@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const wordBank = ["cream", "cents", "wakey", "china", "chewy", "blush", "study", "virgo", "boner", "stick"];
+    const wordBank = ["lover", "films", "bunch", "books", "jazzy", "mints", "watch", "light", "scent", "final"];
     
     // Calculate the current day index (0 = day 1, 1 = day 2, ...)
     const currentDate = new Date();
-    const startDate = new Date("2024-11-13"); // Start date, adjust if needed
+    const startDate = new Date("2024-11-29"); // Start date, adjust if needed
     const dayIndex = Math.floor((currentDate - startDate) / (1000 * 60 * 60 * 24)); // Get the number of days since the start date
 
     if (dayIndex >= wordBank.length) {
-        alert("The word bank only has 10 days of words!");
+        alert("I coming back already, don't miss me so much leh!");
         return;
     }
 
